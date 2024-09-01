@@ -8,7 +8,7 @@ export default function SearchInfo(props) {
 
   useEffect(() => {
     async function loadRoute(source, dest) {
-        const url = `http://localhost:5000/routing?source=${source}&destination=${dest}`;
+        const url = `https://oropezaas.pythonanywhere.com/routing?source=${source}&destination=${dest}`;
         
         try {
           setIsLoading(true);
