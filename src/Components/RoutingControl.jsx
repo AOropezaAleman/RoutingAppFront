@@ -48,10 +48,7 @@ const createRoutineMachineLayer = (props) => {
     var routes = e.routes;
     var summary = routes[0].summary;
     var infoRoute = 'Total distance is ' + 
-          Math.round(summary.totalDistance / 1000).toFixed(2) + 
-          ' km and total time is ' + 
-          Math.round(summary.totalTime % 3600 / 60) + 
-          ' minutes'
+          Math.round(summary.totalDistance / 1000).toFixed(2) + ' km '
     setInfoRoute(infoRoute);                
   });
 
